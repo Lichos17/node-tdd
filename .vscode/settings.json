@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "prettier.bracketSameLine": true,
+  "prettier.configPath": ".prettierrc",
+  "eslint.alwaysShowStatus": true // optional
+}
