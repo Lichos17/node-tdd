@@ -5,6 +5,6 @@
   },
   "rules": {
     "@typescript-eslint/no-redeclare": "off",
-    "@typescript-eslint/strictNullChecks": "on"
+    "@typescript-eslint/strict-boolean-expressions": "warn"
   }
 }
