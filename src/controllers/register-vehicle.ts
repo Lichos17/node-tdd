@@ -1,4 +1,5 @@
 import { HttpRequest, HttpResponse } from '../interfaces/http-interface'
+import { MissingFormalParameter } from '../errors/client-error'
 
 export class RegisterVehicle {
   handle (httpRequest: HttpRequest): HttpResponse {
@@ -8,7 +9,7 @@ export class RegisterVehicle {
       if (!httpRequest.body[props]) {
         return {
           statusCode: 400,
-          body: new Error(`error in the: ${props}`)
+          body: new MissingFormalParameter(props)
         }
       }
     }
