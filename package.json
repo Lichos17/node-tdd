@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --watch",
+    "test:report": "jest --coverage",
     "start": "node app.js",
     "prepare": "husky install"
   },
